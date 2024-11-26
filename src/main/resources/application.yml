@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: movieBackend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+  jpa:
+    properties:
+      hibernate:
+        default_schema: movie
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mfharita@gmail.com
+    password: ekfi axxr vbgt ftwt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  jwt:
+    secret: UdUF/hMYUjTupGsnzeJ8PqboD5ZadrWCWHZXYu2tBDw=
